@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* カード */
+.card {
+  width: 320px;
+  height: 640px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, #4b2e1e, #000);
+  overflow: hidden;
+}
+
+/* 上 */
+.logo {
+  text-align: center;
+  margin: 0;
+  font-size: 32px;
+}
+
+.sub {
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* タイトル */
+.title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* スライダー */
+.slider {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* スクロールバー消す */
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* 横並び */
+.slides {
+  display: flex;
+}
+
+/* 画像 */
+.slides img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+/* 説明 */
+.desc {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* 見出し */
+.price h3,
+.booking h3 {
+  margin: 15px 0 5px;
+}
+
+/* テキスト */
+.price p,
+.booking p {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+/* リンク（予約用） */
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
