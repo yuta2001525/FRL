@@ -2,18 +2,14 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #eee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 /* カード */
 .card {
   width: 320px;
   height: 640px;
-  padding: 20px;
-  box-sizing: border-box;
+  margin: 40px auto;
+  padding: 16px;
   color: white;
   border-radius: 12px;
   background: linear-gradient(to bottom, #4b2e1e, #000);
@@ -43,11 +39,9 @@ body {
 
 /* スライダー */
 .slider {
-  width: 100%;
-  overflow-x: auto;
+  display: flex;
+  overflow: auto;
   scroll-snap-type: x mandatory;
-  border-radius: 8px;
-  margin-bottom: 20px;
 }
 
 /* スクロールバー消す */
